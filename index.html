@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jquary.main.js"></script>
+</head>
+<body>
+<form action="#" class="form">
+    <fieldset class="gender">
+        <input class="input-gender" type="radio" name="gender" id="male" value="male">
+        <label class="label-gender" for="male">Male</label>
+        <input class="input-gender" type="radio" name="gender" id="female" value="female">
+        <label class="label-gender" for="female">Female</label>
+    </fieldset>
+    <div class="city">
+        <label class="label-city" for="select">Choose your city</label>
+        <select class="select-city" name="city" id="select" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+            <option value="">Kiev</option>
+            <option value="">Kharkiv</option>
+            <option value="">Dnepr</option>
+        </select>
+    </div>
+
+    <fieldset class="agree">
+        <input class="input-agree" type="checkbox" name="option" id="option" value="option">
+        <label class="label-agree" for="option">Yes, I agree </label>
+    </fieldset>
+</form>
+
+</body>
+</html>
